@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tournament Dashboards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Event Dashboard</h1>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-sport="badminton">Badminton</button>
+      <button class="tab-btn" data-sport="volleyball">Volleyball</button>
+      <button class="tab-btn" data-sport="carrom">Carrom</button>
+ 
+
+<input id="customSport" type="text" placeholder="Enter your sport name"
+style="display:none; margin-top:10px; width:100%; padding:10px; border-radius:8px;">
+
+    </div>
+  </header>
+
+ <div class="top-actions">
+  <button id="viewMatchesBtn" class="tab-btn small">View Matches</button>
+
+
+  <button id="viewRanksBtn" class="tab-btn small">View Ranks</button>
+
+</div>
+
+  <main id="app"></main>
+
+  <footer>
+    <button id="resetAll" class="neo-btn small">Reset All</button>
+    <div class="credits">Built by Hrishikesh • for match day </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
