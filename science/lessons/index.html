@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Science Lesson: Thermometry & Fiber Optics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🔬 Interactive Physics Lab</h1>
+        <p>Explore the science of temperature and high-speed data!</p>
+    </header>
+
+    <main>
+        <section id="thermometry-section">
+            <h2>🌡️ Thermometry: The Heat Meter</h2>
+            <p>Thermometry is the science of measuring temperature. The key idea is the **thermometric property**—a physical property that changes predictably with temperature, like volume or electrical resistance.</p>
+            
+            <div class="interactive-panel">
+                <h3>Activity 1: Temperature Converter</h3>
+                <label for="temp-slider">Set Temperature (Celsius):</label>
+                <input type="range" id="temp-slider" min="-50" max="100" value="20" step="1">
+                <span id="celsius-output">20°C</span>
+
+                <div class="converter-output">
+                    <p>Fahrenheit: <span id="fahrenheit-output"></span></p>
+                    <p>Kelvin: <span id="kelvin-output"></span></p>
+                </div>
+
+                <div class="thermometer-visual">
+                    <div id="liquid-level"></div>
+                </div>
+
+                <p class="explanation">Watch how the 'liquid' level and the scale readings change! This demonstrates the principle of **thermal expansion** used in liquid-in-glass thermometers.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="fiberoptics-section">
+            <h2>🌐 Fiber Optics: The Speed of Light</h2>
+            <p>Fiber Optics uses thin strands of glass (optical fibers) to transmit light signals. The magic behind this is **Total Internal Reflection (TIR)**.</p>
+            
+
+[Image of Total Internal Reflection in an optical fiber]
+
+            <div class="interactive-panel">
+                <h3>Activity 2: Total Internal Reflection (TIR) Simulator</h3>
+                <p>Light stays trapped in the fiber's core when the incident angle is large enough!</p>
+
+                <label for="angle-slider">Set Incident Angle (Degrees):</label>
+                <input type="range" id="angle-slider" min="0" max="90" value="40" step="1">
+                <span id="angle-output">40°</span>
+
+                <div class="fiber-optic-visual">
+                    <div id="light-beam"></div>
+                    <div class="fiber-core">Core (n=1.5)</div>
+                    <div class="fiber-cladding">Cladding (n=1.4)</div>
+                </div>
+
+                <p id="tir-result" class="explanation">Observe the light beam.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Interactive Science Lesson | Built by You!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
