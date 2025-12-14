@@ -575,8 +575,8 @@ function showCreatePopup() {
     `;
     
     // Initialize with Player 1 and Player 2
-    addPlayerInput(1, "Atharva");
-    addPlayerInput(2, "Nayan");
+    addPlayerInput(1, );
+    addPlayerInput(2, );
 
     // Attach "Add Player" button event
     const addPlayerBtn = document.getElementById("cm_add_player_btn");
